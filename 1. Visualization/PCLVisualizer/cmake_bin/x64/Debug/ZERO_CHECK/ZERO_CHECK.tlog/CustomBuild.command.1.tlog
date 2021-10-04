@@ -1,0 +1,10 @@
+^D:\PCL\PCL_FUNCTION_LEARNING\PCLVISUALIZER\CMAKE_BIN\CMAKEFILES\2D20366BEB58234748A21D4671F9D226\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/PCL/PCL_function_learning/PCLVisualizer/source -BD:/PCL/PCL_function_learning/PCLVisualizer/cmake_bin --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/PCL/PCL_function_learning/PCLVisualizer/cmake_bin/pcl_visualizer_viewports.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
